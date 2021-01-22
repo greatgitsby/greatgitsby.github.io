@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js'></script>
+		<style>
+			body {
+				background-image: url('/nick/nick.gif');
+			}
+		</style>
+	</head>
+
+	<body>
+		<script>
+			var sound = new Howl({
+				src: ['/nick/aud.mp3'],
+				autoplay: true,
+				loop: true
+			});
+
+			sound.play();
+		</script>
+	</body>
+</html>
