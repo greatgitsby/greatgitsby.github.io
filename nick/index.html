@@ -28,8 +28,11 @@
 
 	<body>
 		<script>
+			var filenames = ['stormtrooper.mp3', 'awesomegod.mp3'];
+			var audio = filenames[Math.floor(Math.random() * filenames.length)];
+			
 			var sound = new Howl({
-				src: ['aud.mp3'],
+				src: [audio],
 				autoplay: true,
 				loop: true
 			});
