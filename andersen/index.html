@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js'></script>
+		<style>
+			body {
+				background-image: url('cap_1.png');
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+				background-color: #464646;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script>
+			var filenames = ['halo.mp3'];
+			var audio = filenames[Math.floor(Math.random() * filenames.length)];
+
+			var sound = new Howl({
+				src: [audio],
+				autoplay: true,
+				loop: true
+			});
+
+			sound.play();
+		</script>
+	</body>
+</html>
