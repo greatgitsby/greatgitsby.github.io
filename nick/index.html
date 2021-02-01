@@ -10,6 +10,13 @@
 				background-size: cover;
 				background-color: #464646;
 			}
+
+			.trade {
+				padding-top: 500px;
+				height: 40vh;
+				width: 60vw;
+				position: fixed;
+			}
 		</style>
 	</head>
 
@@ -26,5 +33,28 @@
 
 			sound.play();
 		</script>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_cb165" class='trade'></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
+  "symbol": "GME",
+  "interval": "D",
+  "timezone": "America/Los_Angeles",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "allow_symbol_change": true,
+  "container_id": "tradingview_cb165"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
 	</body>
 </html>
